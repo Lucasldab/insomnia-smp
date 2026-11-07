@@ -29,6 +29,13 @@ first join, or you'll see "You are not white-listed on this server".
 If joining says your mods or version don't match, download the newest
 `.mrpack` from the releases page and import it again (step 4).
 
+## Want a mod added?
+
+[Open a mod request](https://github.com/Lucasldab/mc-pack/issues/new?template=mod-request.yml)
+and paste the mod's Modrinth page (you need a free GitHub account). Within a
+minute a bot replies with whether the mod has a version for this server, and
+Lucas decides whether to add it. You can also just send Lucas the link.
+
 ## What's in it
 
 Fabric API, Fabric Language Kotlin, Veinminer, ShulkerBoxTooltip, Macaw's
