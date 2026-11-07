@@ -13,7 +13,7 @@ you.
 2. **Install the Modrinth App**: <https://modrinth.com/app>. It's free and
    handles the mods for you. (Prism Launcher works too.)
 3. **Download the pack**: open
-   [the latest release](https://github.com/Lucasldab/mc-pack/releases/latest)
+   [the latest release](https://github.com/Lucasldab/insomnia-smp/releases/latest)
    and download the `.mrpack` file.
 4. **Import it**: open the Modrinth App, click **+** (create instance), choose
    **Import from file** and pick the `.mrpack` you downloaded. Wait for it to
@@ -33,7 +33,7 @@ If joining says your mods or version don't match, download the newest
 
 ## Want a mod added?
 
-[Open a mod request](https://github.com/Lucasldab/mc-pack/issues/new?template=mod-request.yml)
+[Open a mod request](https://github.com/Lucasldab/insomnia-smp/issues/new?template=mod-request.yml)
 and paste the mod's Modrinth page (you need a free GitHub account). Within a
 minute a bot replies saying whether the mod has a version for this server, and
 then I decide whether to add it. You can also just send me the link.

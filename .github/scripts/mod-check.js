@@ -8,7 +8,7 @@
 
 const MARKER = "<!-- mod-request-check -->";
 const API = "https://api.modrinth.com/v2";
-const UA = "Lucasldab/mc-pack (mod request check)";
+const UA = "Lucasldab/insomnia-smp (mod request check)";
 const LINK = /https?:\/\/(?:www\.)?modrinth\.com\/(?:mod|plugin|datapack|resourcepack|shader|modpack|project)\/([A-Za-z0-9_.-]+)/;
 
 function readPack(text) {
