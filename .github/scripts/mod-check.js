@@ -45,7 +45,7 @@ async function getJson(fetchImpl, url) {
 
 // Builds the comment text. Exported separately so it can be tested offline.
 async function buildReport({ body, packText, fetchImpl }) {
-  const footer = "\n\n_This is an automatic check. Lucas still decides whether to add the mod._";
+  const footer = "\n\n_That was the automatic check. I still go over every request myself before adding anything. – Lucas_";
   const pack = readPack(packText);
   if (!pack || !pack.mc) {
     return "I couldn't read the current pack, so I can't check this yet." + footer;

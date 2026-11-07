@@ -1,7 +1,8 @@
-# Lucas Fabric Server — mod pack
+# Insomnia SMP — mod pack
 
-Everything you need to join the server, in one file. The pack only lists the
-mods and where to download them from Modrinth; your launcher fetches them.
+This is the mod pack for my Minecraft server. It's one file that lists the
+mods and where to get them on Modrinth, and your launcher downloads them for
+you.
 
 **Server address:** `mc.lldab.com` · **Minecraft:** Java Edition 26.3 (Fabric)
 
@@ -21,8 +22,9 @@ mods and where to download them from Modrinth; your launcher fetches them.
 5. **Join**: in Minecraft go to **Multiplayer → Add Server**, type
    `mc.lldab.com` as the address, save and join.
 
-The server is whitelisted: send Lucas your Minecraft username before your
-first join, or you'll see "You are not white-listed on this server".
+The server is whitelisted, so send me your Minecraft username before you join
+for the first time. Otherwise you'll get "You are not white-listed on this
+server".
 
 ## When the pack changes
 
@@ -33,14 +35,14 @@ If joining says your mods or version don't match, download the newest
 
 [Open a mod request](https://github.com/Lucasldab/mc-pack/issues/new?template=mod-request.yml)
 and paste the mod's Modrinth page (you need a free GitHub account). Within a
-minute a bot replies with whether the mod has a version for this server, and
-Lucas decides whether to add it. You can also just send Lucas the link.
+minute a bot replies saying whether the mod has a version for this server, and
+then I decide whether to add it. You can also just send me the link.
 
 ## What's in it
 
 Fabric API, Fabric Language Kotlin, Veinminer, ShulkerBoxTooltip, Macaw's
 Doors and Trapdoors, More Barrel/Beehive/Bookshelf/Fletching Table/Lectern/
 Stick Variants, Tool Trims, Glow Trims, Armor Hider, Name Tag, Enchantment
-Descriptions, Collective, Prickle, Silk and Glowing Eyeblossom, each pinned to
-the exact version the server runs. The full list with versions is in each
+Descriptions, Collective, Prickle, Silk and Glowing Eyeblossom, each on the
+exact version the server runs. The full list with versions is in each
 release's notes.

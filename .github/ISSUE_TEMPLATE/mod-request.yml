@@ -1,13 +1,13 @@
 name: Mod request
-description: Ask for a mod to be added to the server and the pack.
+description: Ask me to add a mod to the server and the pack.
 title: "Mod request: "
 labels: ["mod request"]
 body:
   - type: markdown
     attributes:
       value: |
-        Paste the mod's Modrinth page. A bot checks within a minute whether it
-        has a version for this server, then Lucas decides whether to add it.
+        Paste the mod's Modrinth page. Within a minute a bot checks whether it
+        has a version for this server, and then I decide whether to add it.
   - type: input
     id: link
     attributes:
