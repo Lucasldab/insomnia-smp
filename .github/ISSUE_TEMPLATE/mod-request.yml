@@ -1,0 +1,30 @@
+name: Mod request
+description: Ask for a mod to be added to the server and the pack.
+title: "Mod request: "
+labels: ["mod request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste the mod's Modrinth page. A bot checks within a minute whether it
+        has a version for this server, then Lucas decides whether to add it.
+  - type: input
+    id: link
+    attributes:
+      label: Modrinth link
+      description: The mod's page on modrinth.com.
+      placeholder: https://modrinth.com/mod/...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you want it?
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+    validations:
+      required: false

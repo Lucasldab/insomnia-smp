@@ -1,0 +1,44 @@
+# Comments on each "Mod request" issue with whether the mod has a version for
+# the pack's Minecraft version and loader. Approval stays manual.
+#
+# The issue text is untrusted, so it is only ever read inside the script,
+# never interpolated into a shell command.
+
+name: Mod request check
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    if: contains(github.event.issue.labels.*.name, 'mod request')
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      # The pack index lists the Minecraft version, the loader and the mods
+      # already included. A missing release leaves the file empty, and the
+      # script says it could not check.
+      - name: Read the current pack
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release download --repo "$GITHUB_REPOSITORY" --pattern '*.mrpack' --output pack.mrpack; then
+            unzip -p pack.mrpack modrinth.index.json > index.json
+          else
+            : > index.json
+          fi
+
+      - name: Check the request
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const fs = require("fs");
+            const run = require("./.github/scripts/mod-check.js");
+            await run({ github, context, packText: fs.readFileSync("index.json", "utf8") });
